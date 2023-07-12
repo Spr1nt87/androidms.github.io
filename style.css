@@ -1,0 +1,833 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    padding-top: 5px;
+    margin-left: 15px;
+}
+
+.links {
+    position: relative;
+    top: 50%;
+    margin-left: auto;
+}
+.links a {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: 0 25px;
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.links a:hover::after{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.servis {
+    background-image:url(/src/4857390.jpg);
+    display: flex;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    flex: 1;
+    min-height: 300px;
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.text {
+    padding-left: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.text h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.telefon{
+    display: flex;
+    margin-left: auto;
+    align-items: end;
+    padding-right: 50px;
+}
+
+.telefon img{
+    
+}
+
+.servis:hover{
+    transform: scale(1.02);
+}
+
+.brands {
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gradient {
+    position: relative;
+    background-image: linear-gradient(
+        180deg, #ff6600, #ffae17, #ffe81c
+    );
+    min-height: 550px;
+
+        --mask:
+          radial-gradient(49.31px at 50% calc(100% - 67.50px),#000 99%,#0000 101%) calc(50% - 50px) 0/100px 100%,
+          radial-gradient(49.31px at 50% calc(100% + 42.50px),#0000 99%,#000 101%) 50% calc(100% - 25px)/100px 100% repeat-x;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+
+    
+}
+
+.info-wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.info{
+    display: flex;
+    flex: 1;
+    border-radius: 15px;
+    background: url(/src/18373.jpg);
+    min-height: 300px;
+    max-width: 1200px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+
+.speed-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    width: 100%;
+
+}
+
+.speed h2{
+    font-family: "Montserra", sans-serif;
+    
+}
+.speed p{
+    font-family: "Montserra", sans-serif;
+    
+}
+
+.divider1{
+    padding-top: 40px;
+    max-width: 60px;
+    width: 100%;
+}
+
+.dividerimg{
+}
+
+.quality-wrap{
+display: flex;
+align-items: center;
+justify-content: center;
+max-width: 350px;
+width: 100%;
+    
+}
+
+.divider2{
+    padding-top: 40px;
+    max-width: 60px;
+    width: 100%;
+}
+
+.quality h2{
+    font-family: "Montserra", sans-serif;
+    
+}
+.quality p{
+    font-family: "Montserra", sans-serif;
+    
+}
+
+.reviews-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+
+}
+
+.reviews h2{
+    font-family: "Montserra", sans-serif;
+    
+}
+.reviews p{
+    font-family: "Montserra", sans-serif;
+    
+}
+
+.speedimg{
+    padding-left: 10px;
+}
+
+.qualityimg{
+    padding-left: 40px;
+}
+
+.reviewsimg{
+    padding-left: 35px;
+}
+
+.prodaja {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-left: 30px;
+}
+
+.tel1 {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    max-width: 500px;
+    min-height: 300px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    flex: 1;
+}
+
+.tel2 {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    max-width: 500px;
+    min-height: 300px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tel3 {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    max-width: 500px;
+    min-height: 300px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tel4 {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    max-width: 500px;
+    min-height: 300px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    height: 100%;
+    background-color: white;
+}
+
+.right{
+    border-radius: 15px 15px 15px 15px;
+    width: 100%;
+    background-image: linear-gradient(
+        90deg,#ffe81c, #ffd2b9
+    );
+
+}
+
+.specifikacije{
+
+}
+
+.ram{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.displej{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+.text-displej{
+    font-family: "Montserra", sans-serif;
+    margin-left: 20px;
+    margin-top: 5px; 
+}
+
+.text-ram {
+    font-family: "Montserra", sans-serif;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.memorija{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.text-memorija{
+    font-family: "Montserra", sans-serif;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+h1 {
+    text-decoration: none;
+}
+
+.text h1 {
+    text-decoration: none;
+    color: black;
+}
+
+#text {
+    text-decoration: none;
+}
+
+.title-tel {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.right h2 {
+    font-family: "Montserra", sans-serif;
+
+}
+
+.cijena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 100%;
+    max-width: 170px;
+    max-height: 50px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.btn {
+    margin-left: 43px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background:#ffaa0c;
+    width: 120px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow,transform;
+    transition-property: box-shadow,transform;
+}
+
+.btn:hover, btn:focus, btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+.title-prodaja {
+    padding-top: 25px;
+    padding-left: 30px;
+}
+
+.title-prodaja h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.lokacija {
+    display: flex;
+}
+
+.lokacija-wrap {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        90deg,#ffe81c, #ffd2b9
+    );
+    max-width: 1200px;
+    margin-left: 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+    min-height: 500px;
+}
+
+.lokacija-wrap{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.lokacija h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.mapa {
+    margin: auto;
+    padding-top: 35px;
+    border-radius:15px;
+}
+
+.lokacija-img{
+    padding-top: 15px;
+    padding-left: 40px;
+}
+
+.footer-wrap {
+    margin-top: 40px; 
+   width: 100%;
+    min-height: 200px;
+    background-color: rgb(44, 44, 44);
+}
+
+.top-left{
+    display: flex;
+    padding-top: 70px;
+}
+
+.top-left a {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+    font-family: "Montserra", sans-serif;
+}
+
+.top-middle {
+    padding-top: 60px;
+}
+
+.top-middle p {
+    font-family: "Montserra", sans-serif;
+    color: rgb(160, 160, 160);
+
+}
+
+.top-right{
+    font-family: "Montserra", sans-serif;
+    padding-top: 80px;
+    color: rgb(160, 160, 160);
+
+}
+
+.top-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-nav-wrap{
+    padding-top: 50px;
+}
+
+.bottom-nav{
+    width: 100%;
+    border-top: 1px solid grey;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.copyright{
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+.designed-by{
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.socials{
+    padding-top: 3px;
+    padding-right: 10px;
+}
+
+.text{
+    color: rgb(160, 160, 160);
+    font-family: "Montserra", sans-serif;
+    font-size: 12px;
+}
+
+@media(max-width:1044px){
+ .links a{
+    display: none;
+ }
+ .logo {
+    margin-left: auto;
+}
+
+#logo {
+    padding-left: 150px;
+}
+
+
+
+.brands {
+    display: none;
+}
+
+.info-wrap{
+    display: flex;
+align-items: center;    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    min-height: 700px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dividerimg{
+    display: none;
+}
+.prodaja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+}
+
+.right{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cijena{
+    min-width: 120px;
+    display: flex;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.ram {
+    margin-left: 10px;
+}
+.displej{
+    margin-left: 10px;
+}
+.memorija{
+    margin-left: 10px;
+}
+
+.text-ram{
+    margin-left:10px;
+}
+
+.text-displej{
+    margin-left:10px;
+}
+
+.text-memorija{
+    margin-left:10px;
+}
+
+.mapa {
+    width: 100%;
+}
+.top-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lokacija-wrap{
+    width: 90%;
+}
+
+}
+
+.print {
+    background-image:url(/src/4857390.jpg);
+    background-color: #ffffff;
+    max-width: 100%;
+    min-height: 400px;
+    display: flex;
+    margin-top: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.cont-print{
+    display: flex;
+    
+}
+
+.text-print {
+    padding-top: 25px;
+    padding-left: 35px;
+    background-color: white;
+    max-height: 100px;
+    min-width: 300px;
+    border-radius: 0px 0px 15px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  
+}
+
+.print-text{
+    font-family: "Montserra", sans-serif;
+}
+
+.slika-maskice{
+    display: flex;
+    margin-left: 300px;
+    padding-top: 25px;
+}
+
+.opis-container {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.opis-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    width: 80%;
+    height: 100%;
+    max-height: 400px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.prvi-red {
+    padding-top: 25px;
+    display: flex;
+}
+
+.prvi-red h2 {
+    padding: 0 40px;
+}
+.naslov{
+
+}
+.naslov h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.drugi-red {
+    padding-top: 25px;
+    display: flex;
+}
+
+.drugi-red h2 {
+    padding: 0 40px;
+}
+
+.treci-red {
+    padding-top: 25px;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.treci-red h2 {
+    padding: 0 40px;
+}
+
+.opis-wrap h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.upit {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.btn2 {
+    margin-left: 43px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background:#ffdf1b;
+    width: 400px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow,transform;
+    transition-property: box-shadow,transform;
+}
+
+.btn2:hover, btn:focus, btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+@media(max-width: 422px){
+
+.logo {
+    
+}
+
+
+.servis{
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    justify-content: center;
+}
+
+.cont-print{
+    display: flex;
+    flex-direction: column;
+}
+
+.slika-maskice {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+
+}
+
+.maskice-img{
+    width: 350px;
+    height: 200px;
+    padding-top: 50px;
+    padding-left:17px
+}
+
+.text-print{
+    padding-top: 0px;
+}
+
+.tel1{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    display: none;
+}
+
+.cijena {
+    margin-bottom: 25px;
+    width: 150px;
+    height: 50px;
+}
+
+.right{
+    height: 1500px;
+}
+
+.tel2{
+    display: flex;
+    flex-direction: column;
+}
+
+.tel3{
+    display: flex;
+    flex-direction: column;
+}
+
+.tel4{
+    display: flex;
+    flex-direction: column;
+}
+
+.lokacija-wrap {
+    margin-left: 20px;
+}
+
+.socials{
+    display: flex;
+}
+
+
+}
+
+.left {
+    display: none;
+}
+
+.right{
+    display: none;
+}
+
+.u-dolasku{
+    font-family: "Montserrat", sans-serif;
+}
